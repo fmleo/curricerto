@@ -46,6 +46,7 @@ FIRST_PARTY_APPS = [
 
 THIRD_PARTY_APPS = [
     "django_extensions",
+    "widget_tweaks",
 ]
 
 PROJECT_APPS = ["curricerto", "curriculos"]
