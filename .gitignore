@@ -15,3 +15,10 @@ wheels/
 db.sqlite3
 
 .ruff_cache
+
+# node
+node_modules/
+
+# static files
+staticfiles/
+static/css/output.css
