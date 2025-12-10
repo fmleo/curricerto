@@ -16,13 +16,14 @@ Including another URLconf
 """
 
 from django.contrib import admin
-from django.urls import path
+from django.urls import include, path
 
 from curricerto.api import api
 from curricerto.views import index
 
 urlpatterns = [
-    path("", index),
+    path("", index, name="index"),
     path("admin/", admin.site.urls),
     path("api/", api.urls),
+    path("", include("accounts.urls", namespace="accounts")),
 ]

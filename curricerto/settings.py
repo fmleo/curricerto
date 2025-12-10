@@ -49,7 +49,11 @@ THIRD_PARTY_APPS = [
     "widget_tweaks",
 ]
 
-PROJECT_APPS = ["curricerto", "curriculos"]
+PROJECT_APPS = [
+    "curricerto",
+    "curriculos",
+    "accounts",
+]
 
 INSTALLED_APPS = FIRST_PARTY_APPS + THIRD_PARTY_APPS + PROJECT_APPS
 

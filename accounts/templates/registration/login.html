@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load widget_tweaks %}
+
+{% block content %}
+    <form method="post" action="">
+        <fieldset class="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
+            <legend class="fieldset-legend">Entrar</legend>
+            {% csrf_token %}
+
+            {% render_field form.username.label_tag %}
+            {% render_field form.username class="input" placeholder="Usuário" %}
+
+            {% render_field form.password.label_tag %}
+            {% render_field form.password class="input" placeholder="Senha" %}
+
+            {% if form.non_field_errors %}
+                <div>
+                    {% for error in form.non_field_errors %}
+                        <p class="text-error">{{ error }}</p>
+                    {% endfor %}
+                </div>
+            {% endif %}
+            <button class="btn btn-neutral mt-4">Entrar</button>
+        </fieldset>
+    </form>
+{% endblock %}
