@@ -10,4 +10,5 @@ dependencies = [
     "django-extensions>=4.1",
     "django-ninja>=1.5.1",
     "django-stubs>=5.2.8",
+    "whitenoise>=6.11.0",
 ]
