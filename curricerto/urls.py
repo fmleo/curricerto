@@ -19,8 +19,10 @@ from django.contrib import admin
 from django.urls import path
 
 from curricerto.api import api
+from curricerto.views import index
 
 urlpatterns = [
+    path("", index),
     path("admin/", admin.site.urls),
     path("api/", api.urls),
 ]
